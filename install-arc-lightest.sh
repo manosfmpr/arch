@@ -3,6 +3,9 @@
 # i3 + Firefox (Netflix/YouTube) + Picom + Syslinux + PipeWire
 # Boots directly to i3 — optimized for low RAM and fast performance
 
+# Boot into Arch linux live usb and run
+# bash install-arch.sh /dev/sda my_hostname my_username
+
 set -e
 
 if [ "$#" -ne 3 ]; then
