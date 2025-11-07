@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Minimal Arch Linux automated installer (BIOS only)
+# XFCE4 with LightDM
 # Optimized for Netflix/YouTube, low RAM, VAAPI + PipeWire + Greek keyboard
 
 # Boot into Arch linux live usb and run
