@@ -1,1 +1,1 @@
-echo $1 $2 hello
+echo 'hello world'
