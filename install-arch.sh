@@ -2,6 +2,9 @@
 # Minimal Arch Linux automated installer (BIOS only)
 # Optimized for Netflix/YouTube, low RAM, VAAPI + PipeWire + Greek keyboard
 
+# Boot into Arch linux live usb and run
+# bash install-arch.sh /dev/sda my_hostname my_username
+
 set -e
 
 if [ "$#" -ne 3 ]; then
