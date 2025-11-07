@@ -114,8 +114,8 @@ echo "exec i3" > ~/.xinitrc
 echo "if [[ -z \$DISPLAY && \$XDG_VTNR -eq 1 ]]; then exec startx; fi" >> ~/.bash_profile
 
 mkdir -p ~/.config/i3
-cat <<I3CONF > ~/.config/i3/config
-set \$mod Mod1
+cat <<'I3CONF' > ~/.config/i3/config
+set $mod Mod1
 font pango:Noto Sans 10
 
 exec --no-startup-id nm-applet
@@ -124,10 +124,10 @@ exec --no-startup-id wireplumber
 exec --no-startup-id picom --experimental-backends --no-fading-openclose --backend glx --vsync
 exec --no-startup-id firefox
 
-bindsym \$mod+Return exec xterm
-bindsym \$mod+d exec dmenu_run
-bindsym \$mod+Shift+q kill
-bindsym \$mod+Shift+e exec "i3-msg exit"
+bindsym $mod+Return exec xterm
+bindsym $mod+d exec dmenu_run
+bindsym $mod+q kill
+bindsym $mod+e exec "i3-msg exit"
 
 bar {
     status_command i3status
